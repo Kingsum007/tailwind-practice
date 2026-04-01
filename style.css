@@ -1,1 +1,22 @@
+@custom-variant dark (&:where(.dark, .dark *));
+
 @import "tailwindcss";
+
+@layer base {
+  h3 {
+    @apply text-2xl font-bold;
+  }
+}
+@layer components {
+  .custom-card {
+    @apply p-6 bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-lg hover:scale-105;
+  }
+  .btn {
+    @apply bg-blue-500 text-white rounded-l-full p-4 hover:bg-green-500 scale-110 transition duration-200;
+  }
+}
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
+}
