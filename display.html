@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-gray-100 max-h-screen p-6">
+    <div class="text-center mb-10 bg-amber-100 max-w-screen">
+        <h1>Test Header</h1>
+    </div>
+    <div class="bg-white p-6 rounded shadow mb-10">
+        <h2 class="text-xl font-semibold  mb-4 ">Choose Display</h2>
+        <div class="flex flex-wrap gap-3">
+            <button class="btn-primary" onclick="setDisplay('block')">Block</button>
+            <button class="btn-primary" onclick="setDisplay('inline')">Inline</button>
+            <button class="btn-primary" onclick="setDisplay('inline-block')">inline-block</button>
+            <button class="btn-primary" onclick="setDisplay('flex')">flex</button>
+            <button class="btn-primary" onclick="setDisplay('grid')">grid</button>
+            <button class="btn-primary" onclick="setDisplay('hidden')">hidden</button>
+            
+
+        </div>
+    </div>
+
+    <div id="container">
+        <div class="box bg-blue-500 m-2 shadow-2xl">
+            First Item
+        </div>
+        <div class="box bg-green-500 m-2 shadow-2xl">
+            First Item
+        </div>
+        <div class="box bg-red-500 m-2 shadow-2xl">
+            First Item
+        </div>
+        <div class="box bg-indigo-500 m-2 shadow-2xl">
+            First Item
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
