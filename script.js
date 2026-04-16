@@ -1,6 +1,6 @@
-function setDisplay(type) {
+function setDisplay(type) 
+{
   const container = document.getElementById("container");
-
   container.className = "border p-4 min-h-[150px]";
   if (type === "block") {
     container.classList.add("block");
